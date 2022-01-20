@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Green Purpose | Contactos</title>
+        <script src="Form.js"></script>
+        <link rel="stylesheet" type="text/css" href="HTML.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="HTML4.html">Contactos</a>
+                <a href="HTML3.html">Recursos</a>
+                <a href="HTML2.html">Desflorestação</a>
+                <a href="HTML1.html">Quem Somos Nos?</a>
+                <a href="index.html">Home</a>
+                <div class="datahora">
+                    <div id="data-hora"></div>
+                    <script>
+                        // Função para formatar 1 em 01
+                        const zeroFill = n => {
+                            return ('0' + n).slice(-2);
+                        }
+            
+                        // Cria intervalo
+                        const interval = setInterval(() => {
+                            // Pega o horário atual
+                            const now = new Date();
+            
+                            // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                            const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+            
+                            // Exibe na tela usando a div#data-hora
+                            document.getElementById('data-hora').innerHTML = dataHora;
+                        }, 1000);
+                        const options = {
+                timeZone: 'Porto/Portugal',
+                hour: 'numeric',
+                minute: 'numeric'
+            };
+            const date = new Intl.DateTimeFormat([], options);
+            console.log(date.format(new Date()));
+                    </script>
+                </div>
+            </div>
+            </nav>
+            <img class="logotipo" src="LOGO_GREEN_PURPOSE.png" alt="">
+            <div class="florestas">
+                <p><strong>Contactos</strong></p>
+            </div>
+            <div class="cardapiofea">
+                <P>Alguma duvida não hesite em contactar-nos atraves dos nossos e-mails!  
+                </P>
+              </div> 
+            <div class="imagenscontactos">
+                <img class="imgs" src="lucas.png" alt="" onmouseout="this.src='lucas.png';" onmouseover="this.src='Lucas1_Prancheta 1.jpg';"/>
+            </div>    
+                <div class="imagenscontactos">    
+                    <img class="imgs" src="Ricardo.png" alt="" onmouseout="this.src='Ricardo.png';" onmouseover="this.src='Ricardo1_Prancheta 1.jpg';"/>
+            </div>
+            <div class="imagenscontactos">    
+                <img class="imgs" src="JP.png" alt="" onmouseout="this.src='JP.png';" onmouseover="this.src='JP1_Prancheta 1.jpg';"/>
+            </div>
+            <div class="hr1">
+                <hr>
+               </div>
+            <div class="contactos">
+                <p><strong>Caixa de Sugestões</strong></p>
+            </div>
+            <div class="cardapiofea">
+                <P>Caso tenha alguma duvida ou sugestão, nos estamos cá para o ouvir!  
+                </P>
+              </div> 
+            <div class="formulario">
+            <form action="malito:a038373@ismai.pt">
+                <input type="text" name="Nome" placeholder="Nome">
+                <input type="text" name="Email" placeholder="Email">
+                <input type="text" name="Numero Telemovel" placeholder="Numero Telemovel">
+                <textarea name="Mensagem" placeholder="Escreva a sua mensagem."></textarea>
+                    <input type="button" value="Enviar" id="boton">
+            </form>
+        </div>
+        <div class="hr1">
+            <hr>
+           </div>
+        <div class="contactos">
+            <p><strong>Associções Parceiras</strong></p>
+        </div>
+        <div class="cardapiofea">
+            <P>Esta caminhada não é so nossa, e por isso temos parceiros que lutam ao nosso lado para um planeta mais verde!  
+            </P>
+          </div> 
+        <div class="logosss">
+        <div class="imagenslogos">
+        <div class="logoss">
+            <a href="https://zero.ong/"><img src="logozero.png" alt="" class="media-object  img-responsive img-thumbnail"></a>
+        </div>
+        </div>    
+            <div class="imagenslogos"> 
+                <div class="logoss">   
+                <a href="https://umaarvorepelafloresta.quercus.pt/"><img src="logoarvore.png" alt="" class="media-object  img-responsive img-thumbnail"></a>
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>

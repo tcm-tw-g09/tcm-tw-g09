@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Green Purpose | Recursos</title>
+        <script src="Form.js"></script>
+        <link rel="stylesheet" type="text/css" href="HTML.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="HTML4.html">Contactos</a>
+                <a href="HTML3.html">Recursos</a>
+                <a href="HTML2.html">Desflorestação</a>
+                <a href="HTML1.html">Quem Somos Nos?</a>
+                <a href="index.html">Home</a>
+                <div class="datahora">
+                    <div id="data-hora"></div>
+                    <script>
+                        // Função para formatar 1 em 01
+                        const zeroFill = n => {
+                            return ('0' + n).slice(-2);
+                        }
+            
+                        // Cria intervalo
+                        const interval = setInterval(() => {
+                            // Pega o horário atual
+                            const now = new Date();
+            
+                            // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                            const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+            
+                            // Exibe na tela usando a div#data-hora
+                            document.getElementById('data-hora').innerHTML = dataHora;
+                        }, 1000);
+                        const options = {
+                timeZone: 'Porto/Portugal',
+                hour: 'numeric',
+                minute: 'numeric'
+            };
+            const date = new Intl.DateTimeFormat([], options);
+            console.log(date.format(new Date()));
+                    </script>
+                </div>
+            </div>
+            </nav>
+            <img class="logotipo" src="LOGO_GREEN_PURPOSE.png" alt="">
+            <div class="florestas">
+                <p><strong>Noticias</strong></p>
+            </div>
+            <div class="titulosimagens">
+                <p>Dia da Árvore - as Cidades Portuguesas Mais Verdes</p>
+            </div>
+            <div class="fotosplantar">
+            <a href="https://www.natgeo.pt/meio-ambiente/2019/03/dia-da-arvore-cidades-portuguesas-mais-verdes"><img src="plantararvores.jpg" alt="" class="media-object  img-responsive img-thumbnail"></a>
+            </div>
+            <div class="descricaoflorestas">
+                <p>"A chegada da Primavera traz as flores, e traz também o Dia da Árvore. No início de uma nova estação, conheça as cidades portuguesas mais verdes."</p>
+            </div>
+            <div class="hr1">
+            <hr>
+           </div>
+           <div class="titulosimagens">
+            <p>Plantar árvores ajuda a combater as alterações climáticas mas é preciso muito mais</p>
+           </div>
+           <div class="fotosplantar">
+        <a href="https://www.natgeo.pt/meio-ambiente/2021/03/plantar-arvores-ajuda-a-combater-as-alteracoes-climaticas-mas-e-preciso-mais"><img src="plantararvores1.jpg" alt="" class="media-object  img-responsive img-thumbnail"></a>
+          </div>
+        <div class="descricaoflorestas">
+            <p>"De acordo com um novo estudo, é preciso mais do que duplicar a produção de mudas para os EUA atingirem as suas metas de reflorestação."</p>
+        </div>
+        <div class="hr1">
+        <hr>
+       </div>
+       <div class="titulosimagens">
+        <p>Portugal foi o segundo país da UE mais afetado por fogos florestais em 2020</p>
+       </div>
+       <div class="fotosplantar">
+    <a href="https://observador.pt/2021/10/29/portugal-foi-o-segundo-pais-da-ue-mais-afetado-por-fogos-florestais-em-2020/"><img src="incendios.jfif" alt="" class="media-object  img-responsive img-thumbnail"></a>
+     </div>
+    <div class="descricaoflorestas1">
+        <p>"O relatório da Comissão Europeia sobre incêndios florestais diz que, no território analisado, "500 mil hectares, 61% dos quais florestas que levarão anos a recuperar, foram destruídos pelas chamas"."</p>
+    </div>
+    <div class="hr1">
+    <hr>
+   </div>
+<div class="contactos">
+    <p><strong>Download Projeto da Aplicação</strong></p>
+</div>
+<div class="projeto">
+<a href="Apresentacao_Green_Purpose.pdf">Projeto</a>
+</div>
+<div class="hr1">
+    <hr>
+    </div>
+    <div class="contactos">
+        <p><strong>Preçario Árvores</strong></p>
+    </div>
+    <div class="projeto">
+    <a href="XMLGREENPURPOSE.xml">Preçario</a>
+    </div>
+    </body>
+</html>

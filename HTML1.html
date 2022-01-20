@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Green Purpose | Quem Somos Nos?</title>
+        <link rel="stylesheet" type="text/css" href="HTML.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="HTML4.html">Contactos</a>
+                <a href="HTML3.html">Recursos</a>
+                <a href="HTML2.html">Desflorestação</a>
+                <a href="HTML1.html">Quem Somos Nos?</a>
+                <a href="index.html">Home</a>
+                <div class="datahora">
+                  <div id="data-hora"></div>
+                  <script>
+                      // Função para formatar 1 em 01
+                      const zeroFill = n => {
+                          return ('0' + n).slice(-2);
+                      }
+          
+                      // Cria intervalo
+                      const interval = setInterval(() => {
+                          // Pega o horário atual
+                          const now = new Date();
+          
+                          // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                          const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+          
+                          // Exibe na tela usando a div#data-hora
+                          document.getElementById('data-hora').innerHTML = dataHora;
+                      }, 1000);
+                      const options = {
+              timeZone: 'Porto/Portugal',
+              hour: 'numeric',
+              minute: 'numeric'
+          };
+          const date = new Intl.DateTimeFormat([], options);
+          console.log(date.format(new Date()));
+                  </script>
+              </div>
+            </div>
+        </nav>
+            <img class="logotipo" src="LOGO_GREEN_PURPOSE.png" alt="">
+            <a id="quemsomosnos"></a>
+    <div class="somosnos">
+        <p><strong>Quem Somos Nós?</strong></p>
+    </div>
+    <div class="nos">
+    <P><b>Green Purpose</b> é uma app móvel portuguesa, formada por 3 estudantes do ISMAI do curso de Tecnologias de Comunicação e Multimédia. Esta app promove a sustentabilidade, proteção ambiental e a reflorestação.  A app dá-lhe a oportunidade de colaborar neste projeto, doando uma pequena quantia, destinada ao cultivo de árvores. Os utilizadores da nossa aplicação, terão opurtunidade de cooperar com esta causa, “comprando” uma árvore atraves da nossa aplicação. O nosso objetivo, é tentar recuperar a fauna florestal e contribuir para um mundo mais amigo do ambiente.
+    </P>
+    </div>
+  <div class="hr1">
+  <hr>
+ </div>
+    <div class="imagens">
+        <img class="foto" src="arvores.jpg" alt="">
+    </div>    
+        <div class="imagens">    
+        <img class="foto" src="arvores1.jpg" alt="">
+    </div>
+    <div class="imagens">    
+        <img class="foto" src="arvores2.jpg" alt="">
+    </div>
+    <div class="hr1">
+      <hr>
+     </div>
+    <div class="features">
+        <p><strong>Features da aplicação</strong></p>
+    </div>
+    <div class="cardapiofea">
+      <P>Estas são algumas das features que pode encontrar na nossa aplicação. 
+      </P>
+    </div>
+    <div class="listafeatures">
+        <ul>
+            <li>Fazer Login
+            <li>Associar ao email
+            <li>Email automático
+            <li>Métodos de pagamento
+            <li>Documentos (preçário, termos e condições)
+            <li>Sistema de agendamento
+            <li>Preenchimento de Formulários
+            <li>Geolocalização das árvores
+            <li>Sistema de Gamificação
+            <li>Galeria de Fotografias dos vários projetos
+            <li>Pop-Ups
+            <li>Caixa de sugestões
+            <li>Chat Box automático
+            <li>Inclusão de Imagens (tutorial da aplicação)
+            <li>Pagina Pessoal
+            </ul>
+            </div>
+        <div class="hr1">
+          <hr>
+         </div>
+        <div class="features">
+            <p><strong>Design da Aplicação</strong></p>
+        </div>
+        <div class="cardapiofea">
+          <P>O design da nossa aplicação, destaca-se de todas as outras, devido a sua<b> modernidade, organização e aspeto.</b>  
+          </P>
+        </div>
+         
+        <div class="caixa-slideshow">
+
+            <div class="meus-slides fade">
+              <img src="imagem1.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem2.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem3.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem4.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem5.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem6.jpg" style="width:100%" alt="">
+            </div>
+      
+            <div class="meus-slides fade">
+              <img src="imagem7.jpg" style="width:100%" alt="">
+            </div>
+      
+      
+            <a class="anterior" onclick="controlador_slides(-1, 0)">&#10094;</a>
+            <a class="proximo" onclick="controlador_slides(1, 0)">&#10095;</a>
+          </div>
+          <br>
+          <br>
+          <div class="hr1">
+            <hr>
+           </div>
+          <div class="features">
+            <p><strong>Download da Aplicação</strong></p>
+        </div>
+        <div class="cardapiofea">
+          <P>Junte-se a esta familia sustentavel e descarregue a nossa aplicação por uma destas plataformas.  
+          </P>
+        </div> 
+        <div class="logostores">
+          <div class="logostore">
+          <a href="https://www.apple.com/pt/app-store/"><img src="logoappstore.png" alt="" class="media-object  img-responsive img-thumbnail"></a>
+        </div>
+        </div>    
+          <div class="logostores"> 
+            <div class="logostore">  
+              <a href="https://play.google.com/store"><img src="logoplaystore.png" alt="" class="media-object  img-responsive img-thumbnail"></a>
+      </div>
+      </div>
+        </body>
+        <script src="Form.js"></script>
+    </html>
+    

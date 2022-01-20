@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Green Purpose | Desflorestação</title>
+        <script src="Form.js"></script>
+        <link rel="stylesheet" type="text/css" href="HTML.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="HTML4.html">Contactos</a>
+                <a href="HTML3.html">Recursos</a>
+                <a href="HTML2.html">Desflorestação</a>
+                <a href="HTML1.html">Quem Somos Nos?</a>
+                <a href="index.html">Home</a>
+                <div class="datahora">
+                <div id="data-hora"></div>
+                <script>
+                    // Função para formatar 1 em 01
+                    const zeroFill = n => {
+                        return ('0' + n).slice(-2);
+                    }
+        
+                    // Cria intervalo
+                    const interval = setInterval(() => {
+                        // Pega o horário atual
+                        const now = new Date();
+        
+                        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+        
+                        // Exibe na tela usando a div#data-hora
+                        document.getElementById('data-hora').innerHTML = dataHora;
+                    }, 1000);
+                    const options = {
+            timeZone: 'Porto/Portugal',
+            hour: 'numeric',
+            minute: 'numeric'
+        };
+        const date = new Intl.DateTimeFormat([], options);
+        console.log(date.format(new Date()));
+                </script>
+            </div>
+            </div>
+        </nav>
+            <img class="logotipo" src="LOGO_GREEN_PURPOSE.png" alt="">
+            <a id="floresta"></a>
+            <div class="florestas">
+                <p><strong>Florestas e os Problemas Ambientais</strong></p>
+            </div>
+            <div class="nos">
+                <p>A floresta é um dos mais importantes componentes do ecossistema do planeta Terra. Uma floresta é constituída por um diversificado conjunto de fauna e flora. As florestas cobrem a segunda maior área no nosso planeta, só sendo superadas pelos oceanos, e estas mesmas florestas são as maiores responsáveis pela existência de oxigénio na Terra e, como tal, temos de as preservar. A floresta em Portugal ocupa 3.472.459 hectares de área, que correspondem a 39% da área do país. Isto leva Portugal a ser um dos países com mais área florestada da Europa.</p>
+            </div>
+            <div class="hr1">
+                <hr>
+               </div>
+            <div class="contactos">
+                <p><strong>Vantagens Plantar Árvores</strong></p>
+            </div>
+            <div class="listafeatures">
+                <ul>
+                    <li>Ajudam a combater o aquecimento global
+                    <li>Ajudam a regular a temperatura
+                    <li>Ajudam a reduzir a erosão e a degradação do solo
+                    <li>Purifica o ar
+                    <li>Retém água da chuva
+                    <li>Servem de abrigo a animais
+                    <li>Dão sombra
+                    <li>Diminuição da poluição sonora
+                    <li>Revitalizam a área urbana
+                    <li>Algumas produzem alimento
+                    <li> Aproximação da natureza à população    
+                </ul>
+              </div>
+                <div class="hr1">
+                    <hr>
+                   </div>
+                <div class="contactos">
+                    <p><strong>Árvores Mais Comuns nas Florestas</strong></p>
+                </div>
+                <div class="arvoresfloresta">
+                    <a href="https://pt.wikipedia.org/wiki/Pinheiro"><img class="fotoarvores" src="pinheiro.jpg" alt="" onmouseout="this.src='pinheiro.jpg';" onmouseover="this.src='pinheiro1.jpg';"/></a>
+                </div>    
+                    <div class="arvoresfloresta">    
+                        <a href="https://pt.wikipedia.org/wiki/Eucalyptus"><img class="fotoarvores" src="eucalitos.jpg" alt="" onmouseout="this.src='eucalitos.jpg';" onmouseover="this.src='Eucalitos1.png';"/></a>
+                </div>
+                <div class="arvoresfloresta">    
+                    <a href="https://pt.wikipedia.org/wiki/Carvalho"><img class="fotoarvores" src="carvalho.jpg" alt="" onmouseout="this.src='carvalho.jpg';" onmouseover="this.src='Carvalhos1.png';"/></a>
+                </div>
+<div class="hr1">
+    <hr>
+   </div>
+<div class="contactos">
+    <p><strong>Documentário sobre Probelmas Florestais</strong></p>
+</div>
+<div class="cardapiofea">
+    <P>Assista a este pequeno vídeo sobre os problemas florestais, e tenha precepção que a mudança é necessária..  
+    </P>
+  </div> 
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Uuw7zTXxrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="hr1">
+        <hr>
+       </div>
+    <div class="nos">
+        <P>A desflorestação é um sério problema que se tem vindo agravar ao longo dos anos. Desde fogos postos à exploração intensiva da fauna, as florestas do planeta Terra cada vez sofrem mais com as atitudes e ações do ser humano. Para combater contra isto, devemos limpar as florestas e não poluir o meio ambiente. Nós precisamos da floresta, e a floresta precisa de nós!
+        </P>
+        </div>
+        <div class="tabela">
+<table style="width:100%">
+  <tr>
+    <th>Ano</th>
+    <th>Numero de Incêndios</th>
+    <th>Área Ardida</th>
+  </tr>
+  <tr>
+    <td>2009</td>
+    <td>26.136</td>
+    <td>62.725</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>22.027</td>
+    <td>86.201</td>
+  </tr>
+  <tr>
+    <td>2011</td>
+    <td>25.222</td>
+    <td>52.477</td>
+  </tr>
+  <tr>
+    <td>2012</td>
+    <td>21.176</td>
+    <td>61.312	</td>
+  </tr>
+  <tr>
+    <td>2013</td>
+    <td>19.291</td>
+    <td>96.657</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>7.067</td>
+    <td>11.129</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>15.851</td>
+    <td>39.828</td>
+  </tr>
+  <tr>
+    <td>2016</td>
+    <td>13.261</td>
+    <td>83.697</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>x</td>
+    <td>170.585</td>
+  </tr>
+  <tr>
+    <td>2018</td>
+    <td>x</td>
+    <td>19.486</td>
+  </tr>
+  <tr>
+    <td>2019</td>
+    <td>x</td>
+    <td>15.913</td>
+  </tr>
+  <tr>
+    <td>2020</td>
+    <td>x</td>
+    <td>28.954</td>
+  </tr>
+</table>
+</div>
+</body>
+    </html>

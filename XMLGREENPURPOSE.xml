@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Precario>
+<List>
+    <code>1</code>
+    <TipoArvore>Carvalho</TipoArvore>
+    <Caracteristas>Predominante em terrenos profundos e com humidade. Não suporta frio intenso nem grandes altitudes.</Caracteristas>
+    <Price>10 Euros</Price>
+</List>
+<List>
+    <code>2</code>
+    <TipoArvore>Eucalipto</TipoArvore>
+    <Caracteristas>Precisa de climas suaves e com humidade.</Caracteristas>
+    <Price>10 Euros</Price>
+    </List>
+ <List>
+        <code>3</code>
+        <TipoArvore>Pinheiro Bravo</TipoArvore>
+        <Caracteristicas>Especie pouco exigente em questões climatéricas.</Caracteristicas>
+        <Price>15 Euros</Price>
+ </List>
+ <List>
+        <code>4</code>
+        <TipoArvore>Pinheiro Manso</TipoArvore>
+        <Caracteristicas>Prefere Solos arenosos, climas quentes e secos.</Caracteristicas>
+        <Price>15 Euros</Price>
+ </List>
+ <List>
+    <code>5</code>
+    <TipoArvore>Sobreiro</TipoArvore>
+    <Caracteristicas>Necessita de clima suave, muita luz e alguma humidade.</Caracteristicas>
+    <Price>10 Euros</Price>
+</List>
+<List>
+    <code>6</code>
+    <TipoArvore>Platano</TipoArvore>
+    <Caracteristicas>Clima ameno, solos ferteis e leves.</Caracteristicas>
+    <Price>8 Euros</Price>
+</List>
+<List>
+    <code>7</code>
+    <TipoArvore>Oliveira</TipoArvore>
+    <Caracteristicas>Clima temperado e humido.</Caracteristicas>
+    <Price>25 Euros</Price>
+</List>
+<List>
+    <code>8</code>
+    <TipoArvore>Nogueira</TipoArvore>
+    <Caracteristicas>Solos Ferteis com humidade. Necessita de algum calor e de espaço.</Caracteristicas>
+    <Price>12 Euros</Price>
+</List>
+</Precario>

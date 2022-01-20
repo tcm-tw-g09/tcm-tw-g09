@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("fundoambiente.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}   
+
+.logotipo {
+    padding-top: 17px;
+    width: 90px;
+    height: 99px;
+}
+.navbar {
+   
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding-right: 3%;
+    font-family: Tahoma;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #b2d7ac;
+    text-decoration: underline;
+}  
+.datahora {
+    color: black;
+    font-size: 20px;
+    padding-top: 7px;
+    margin-left: 6%;
+}
+
+.Nome {
+       color: white;
+       font-size: 160px;
+       padding-top: 3%;
+}
+
+.Green {
+    margin-left: 25%;
+    
+}
+.Purpose {
+    margin-left: 42%;
+}
+
+.frase {
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.som{
+    margin-left: 40%;
+    padding-top: 3%;
+}
+
+
+.somosnos {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 45px;
+    padding-top: 6%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nos {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.imagens {
+    height: 465px;
+    width: 495px;
+    display: inline-block;
+    margin: 4px;
+}
+
+.foto {
+    height: 465px;
+    width: 495px;
+    display: inline;
+    padding-top: 5%;
+}
+.cardapiofea {
+    text-align: center;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3%;
+
+}
+.features {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 3%;
+    text-align: center;
+    text-decoration: underline;
+}
+.listafeatures {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    padding-top: 5%;
+    margin-left:10%;
+    
+}
+.logostores {
+    height: 225px;
+    width: 295px;
+    display: inline-block;
+    padding-top: 4%;
+}
+.logostore {
+        height: 225px;
+        width: 295px;
+        display: inline;
+        margin-left: 157%;
+}
+* {box-sizing:border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+h2 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-weight: 900;
+font-size: 30px;
+text-align: center;
+margin:20px 0 20px;
+}
+body {
+    padding: 0px 0 60px 0;
+}
+
+.caixa-slideshow {
+    max-width: 315px;
+    position: relative;
+    margin: auto;
+    padding-top: 4%;
+}
+
+.meus-slides {
+    display: none;
+}
+
+.anterior,
+.proximo {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.proximo {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover,
+.proximo:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.descricao-imagem {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.ponto-indicador-slide {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.ativo, .ponto-indicador-slide:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+#geral {
+  width: 80%;
+  margin:0 auto;
+  background: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.florestas {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+.desflorestacao {
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.arvoresfloresta {
+    height: 400px;
+    width: 395px;
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 4%;
+}
+
+.fotoarvores {
+    height: 400px;
+    width: 395px;
+    display: inline;
+    padding-top: 5%;
+}
+
+.descricaoarvores {
+      color: white;
+      font-family: Verdana, sans-serif;
+      font-size: 45px;
+      margin-left: 200px;
+}
+
+
+.video {
+    padding-top: 3%;
+    text-align: center;
+}
+.tabela {
+    width: 1000px;
+    padding-top: 5%;
+    margin-left: 17.5%;
+}
+th {
+    color: black;
+    background-color: white;
+}
+td {
+    color: #b2d7ac;
+    background-color: black;
+    text-align: center;
+}
+table, th, td {
+    border:1px solid black;
+}
+.titulosimagens {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    padding-top: 5%;
+    text-align: center;
+    text-decoration: underline;
+}
+.fotosplantar {
+    width: 500px;
+    height: 500px;
+    padding-top: 8%;
+    margin-left: 30%;
+}
+.descricaoflorestas {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 2%;
+}
+
+.hr1 {
+    padding-top: 2%;
+    color: white;
+}
+.projeto {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3%;
+}
+.descricaoflorestas1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Formulário*/
+
+.contactos {
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    padding-top: 3%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.imagenscontactos {
+    height: 500px;
+    width: 395px;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.imgs {
+    height: 500px;
+    width: 395px;
+    display: inline;
+    padding-top: 5%;
+}
+.imagenslogos {
+    height: 165px;
+    width: 195px;
+    display: inline-block;
+    margin: 30px;
+}
+.logosss {
+    padding-top: 3%;
+}
+
+.logoss {
+    height: 165px;
+    width: 195px;
+    display: inline;
+    margin-left: 265%;
+}
+.formulario {
+    padding-top: 3%;
+}
+
+form {
+    width: 950px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+} 
+
+#boton {
+    background: black;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+

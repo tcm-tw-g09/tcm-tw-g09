@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Green Purpose | Home</title>
+        <link rel="stylesheet" type="text/css" href="HTML.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="HTML4.html">Contactos</a>
+                <a href="HTML3.html">Recursos</a>
+                <a href="HTML2.html">Desflorestação</a>
+                <a href="HTML1.html">Quem Somos Nos?</a>
+                <a href="index.html">Home</a>
+                <div class="datahora">
+                <div id="data-hora"></div>
+                <script>
+                    // Função para formatar 1 em 01
+                    const zeroFill = n => {
+                        return ('0' + n).slice(-2);
+                    }
+        
+                    // Cria intervalo
+                    const interval = setInterval(() => {
+                        // Pega o horário atual
+                        const now = new Date();
+        
+                        // Formata a data conforme dd/mm/aaaa hh:ii:ss
+                        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+        
+                        // Exibe na tela usando a div#data-hora
+                        document.getElementById('data-hora').innerHTML = dataHora;
+                    }, 1000);
+                    const options = {
+            timeZone: 'Porto/Portugal',
+            hour: 'numeric',
+            minute: 'numeric'
+        };
+        const date = new Intl.DateTimeFormat([], options);
+        console.log(date.format(new Date()));
+                </script>
+            </div>
+        </div>
+            <img class="logotipo" src="LOGO_GREEN_PURPOSE.png" alt="">
+        </nav>
+        <a id="home"></a>
+        <div class="Nome">
+          <div class="Green">
+              <p>Green</p>
+          </div>
+          <div class="Purpose">
+            <p>Purpose</p>
+        </div>
+    </div>
+    <div class="frase">
+        <p>Eficácia é utilizar os nossos recursos com um objetivo:<br>
+             Proporcionar-lhe  o melhor serviço
+    </div>
+    <div class="som">
+    <audio controls>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+    </body>
+</html>
